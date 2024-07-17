@@ -1,0 +1,11 @@
+step 1:- Install Endroid/QR-Code Package:
+  composer require endroid/qr-code
+
+step:-2 Usage
+  Create a PHP File:
+    Create a file named form in your project directory.
+    Create a file named generate.php in your project directory.
+You have successfully created a QR Code generator using the endroid/qr-code package. 
+You can customize the QR codes further by exploring the package's documentation.
+
+For more information, visit the Endroid/QR-Code GitHub repository.
