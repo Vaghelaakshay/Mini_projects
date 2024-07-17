@@ -1,11 +1,9 @@
-open your cmd on repo and write this command
-composer require symfony/mailer
-than change some  email.php
-like
-$transport = Transport::fromDsn('smtp://your-username:your-password@smtp.example.com:587');
+step1:- Install  symfony/mailer Package:
+ composer require symfony/mailer
 
+step 2:-than change some  email.php
+like,$transport = Transport::fromDsn('smtp://your-username:your-password@smtp.example.com:587');
 $email->from('example@gmail.com');
-
 // Set the "To address"
 $email->to(
     'example1@gmail.com'
