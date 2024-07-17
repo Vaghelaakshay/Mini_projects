@@ -8,7 +8,8 @@ use Symfony\Component\Mailer\Transport;
 use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mime\Email;
 
-$transport = Transport::fromDsn('smtp://vaghelaakshay9823@gmail.com:fwcvitlwhkfzejjt@smtp.gmail.com:587');
+$transport = Transport::fromDsn('smtp://your-username:your-password@smtp.example.com:587');
+
 
 // Create a Mailer object
 $mailer = new Mailer($transport);
@@ -17,11 +18,11 @@ $mailer = new Mailer($transport);
 $email = (new Email());
 
 // Set the "From address"
-$email->from('vaghelaakshay9823@gmail.com');
+$email->from('example@gmail.com');
 
 // Set the "To address"
 $email->to(
-    'vaghelaakshay1225@gmail.com'
+    'example1@gmail.com'
 );
 // Set a "subject"
 $email->subject('first mail from this project!');
