@@ -1,0 +1,28 @@
+open your cmd on repo and write this command
+composer require symfony/mailer
+than change some  email.php
+like
+$transport = Transport::fromDsn('smtp://your-username:your-password@smtp.example.com:587');
+
+$email->from('example@gmail.com');
+
+// Set the "To address"
+$email->to(
+    'example1@gmail.com'
+);
+// Set a "subject"
+$email->subject('first mail from this project!');
+
+// Set the plain-text "Body"
+$email->text('The plain text version of the message.');
+
+// Set HTML "Body"
+$email->html('
+    <h1 style="color: #fff300; background-color: #0073ff; width: 500px; padding: 16px 0; text-align: center; border-radius: 50px;">
+    This message for first mail to my anther id by this project.
+    </h1>
+    <br>
+    <h1 style="color: #ff0000; background-color: #5bff9c; width: 500px; padding: 16px 0; text-align: center; border-radius: 50px;">
+    The End!
+    </h1>
+');
